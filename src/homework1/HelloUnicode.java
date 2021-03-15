@@ -13,6 +13,11 @@ public class HelloUnicode {
         System.out.println(((int) 'l'));
         System.out.println(((int) 'l'));
         System.out.println(((int) 'o'));
-        
+
+        System.out.print((char)72);
+        System.out.print((char)101);
+        System.out.print((char)108);
+        System.out.print((char)108);
+        System.out.print((char)111);
     }
 }
