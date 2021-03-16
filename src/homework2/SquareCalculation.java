@@ -23,6 +23,7 @@ public class SquareCalculation {
             radius = (int) Math.round(Math.random() * 10);
         } while (radius == 0);
 
-        System.out.println("Square of circle is: "  +  radius  + "^2"+ " * " + Math.PI + " = " + (Math.round((Math.PI * Math.pow(radius, 2))*100.0)/100.00));
+        System.out.println("Square of circle is: "  +  radius  + "^2"+ " * " + Math.PI +
+                " = " + (Math.round((Math.PI * Math.pow(radius, 2))*100.0)/100.00));
     }
 }
