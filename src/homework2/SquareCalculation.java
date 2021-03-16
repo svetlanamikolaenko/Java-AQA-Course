@@ -24,6 +24,6 @@ public class SquareCalculation {
         } while (radius == 0);
 
         System.out.println("Square of circle is: "  +  radius  + "^2"+ " * " + Math.PI +
-                " = " + (Math.round((Math.PI * Math.pow(radius, 2))*100.0)/100.00));
+                " = " + (Math.round(Math.PI * Math.pow(radius, 2)*100.0)/100.00));
     }
 }
