@@ -6,6 +6,7 @@ public class PrintAsterisksProgram {
         String space = " ";
 
         //FIRST TASK
+        System.out.println("First task");
         String asterisks = "";
         for (int i = 0; i < 8; i++ ){
             asterisks += asterisk;
@@ -13,6 +14,8 @@ public class PrintAsterisksProgram {
         for (int i = 8; i > 0; i--){
             System.out.println(asterisks);
         }
+        //SECOND TASK
+        System.out.println("\n" + "Second task");
         String asteriksSpases = "";
         for(int i = 0; i<6; i++){
             if(i == 0){
@@ -23,9 +26,6 @@ public class PrintAsterisksProgram {
                 asteriksSpases = asteriksSpases+asterisk;
             }
         }
-
-        //SECOND TASK
-        System.out.println("Second task");
         System.out.println(asterisks);
         for (int i = 0; i<3; i++){
             System.out.println(asteriksSpases);
@@ -33,7 +33,7 @@ public class PrintAsterisksProgram {
         System.out.println(asterisks);
 
         //THIRD TASK
-        System.out.println("Third task");
+        System.out.println("\n" + "Third task");
         String ast = "";
         for (int i = 0; i<7; i++){
             System.out.println(ast += asterisk);
