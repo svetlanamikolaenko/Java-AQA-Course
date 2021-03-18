@@ -1,6 +1,7 @@
 package homework2;
 
 public class FactorialOfN {
+    //Create a program that calculates the factorial of an integer value n.
     public static void main(String[] args) {
         int n;
 

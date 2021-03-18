@@ -1,6 +1,9 @@
 package homework2;
 
 public class RandomValuesInArray {
+    /* Create an array of any length and fill it with random integers.
+    Using loops and conditions sort this array and print it out to the console.
+     */
     public static void main(String[] args) {
         int[] array = new int[10];
 

@@ -1,6 +1,9 @@
 package homework2;
 
 public class SquareCalculation {
+    /*Create a simple program that calculates and prints the square of a rectangle and a circle.
+    Import and use Math class.
+     */
     public static void main(String[] args) {
         //Square of rectangle
         int length;

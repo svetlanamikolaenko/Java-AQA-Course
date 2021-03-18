@@ -1,6 +1,11 @@
 package homework2;
 
 public class CalculationProgram {
+    /*
+    Create a simple program, that creates two integers
+    and print the result of calculation of their
+    addition, substruction, multiplication and division.
+     */
     public static void main(String[] args) {
         int randomFirstInt = (int) Math.round(Math.random() * 100);
         int randomSecondInt = (int) Math.round(Math.random() * 100);

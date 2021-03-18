@@ -2,7 +2,7 @@ package homework2;
 
 import java.util.Arrays;
 
-public class SqureRootArray {
+public class SquareRootArray {
     public static void main(String[] args) {
         int[] array = new int[10];
         double[] resultArray = new double[10];
