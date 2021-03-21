@@ -2,7 +2,7 @@ package homework3;
 
 import java.util.Locale;
 
-public class UserEmail {
+public class LoginDomain {
     /*7. Given a user's email address: john_smith@example.com.
     Create two strings "login" and "domain" which will be substrings of full email address.
     The First Name and Last Name of the user should be in the following format: "Name Surname".
