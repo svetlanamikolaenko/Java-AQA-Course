@@ -10,10 +10,7 @@ public class PrintHelloWorld {
      */
     public static void main(String[] args) {
         // write your code here
-        String word = "Hello world";
-        char[] wordChars =  word.toCharArray();
-
-        for (char c: wordChars){
+        for (int c: "Hello world".toCharArray()){
             printList(transformIntToChar(c));
         }
     }
