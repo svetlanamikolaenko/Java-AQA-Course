@@ -21,6 +21,8 @@ public class StartsFromThe {
         System.out.println( word1 + " starts from The - > " + result1[0].matches("The"));
         System.out.println( word2 + " starts from The - > " + result2[0].matches("The"));
 
+        word1.split(", ").toString().startsWith("The");
+
         //OR
         System.out.println(checkStartWithThe(word1));
         System.out.println(checkStartWithThe(word2));
@@ -28,7 +30,7 @@ public class StartsFromThe {
 
     public static String checkStartWithThe(String words){
         String [] strings =  words.split(" ");
-        if("The".equals(strings[0])){
+        if(strings[0].startsWith("The")){
             return "Text starts with \"The\"";
         }
         return "Text starts from \"" + strings[0] + "\"";
