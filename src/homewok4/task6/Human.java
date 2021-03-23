@@ -1,8 +1,8 @@
-package homewok4.task5;
-/*5. Create a simple class with a bunch of constructors.
-All these constructors should take different number of parameters.
-Demonstrate in your class, how we can call one constructor from another.
- */
+package homewok4.task6;
+/*6. Create a simple class with any 3 fields.
+     Demonstrate in your class how we can use "this" keyword to refer to the object,
+    from which a constructor or a method was invoked.
+*/
 
 public class Human {
     public int weight;
