@@ -1,0 +1,60 @@
+1. Create a class "Human". A human should have the following attributes: weight, age, first name, last name, height.
+Requirements: 
+a) Create a class Human with all the required fields to store the information (variable types you could choose by yourself).
+b) Add to the class a constructor with parameters which initialize all the fields.
+
+2. Implement the method fight() depending on weight, strength and age of the boxer:
+You should write the dependency by yourself. The method should return true or false if our boxer won or lost.
+public class Boxer {
+    public int age;
+    public int weight;
+    public int strength;
+
+    public Boxer(int age, int weight, int strength) {
+        this.age = age;
+        this.weight = weight;
+        this.strength = strength;
+    }
+
+    public boolean fight(Boxer anotherBoxer) {
+        // write your code here
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
+
+Requirements: 
+a) if ourBoxer.fight(anotherBoxer) returns true, then anotherBoxer.fight(outBoxer) should return false;
+
+3. Create 3 different classes to demonstrate the relationships "has-a" and "uses-a". They can be anything you want.
+For example: Car - Engine - Wheels
+
+4. Create a class StaticCalculator. It should have three fields: double firstValue, double secondValue and String operation.
+Create all required constructors to properly initialize your object.
+Consider the case when user does not provide any parameters when creates a new object.
+Write a method "calculate" that takes these two values and return the result of the calculation according to the operation.
+Write the test class which contains the main method.
+In this main method you should create your StaticCalculator object and do some calculation to test your code,
+by calling your "calculate" method.
+Print all results to the console.
+
+5. Create a simple class with a bunch of constructors.
+All these constructors should take different number of parameters.
+Demonstrate in your class, how we can call one constructor from another.
+
+6. Create a simple class with any 3 fields.
+Demonstrate in your class how we can use "this" keyword to refer to the object,
+from which a constructor or a method was invoked.
+
+7. Create a simple class with some fields.
+Demonstrate in your class how we can use initialization blocks.
+
+8. Find the information about the order of initialization, when you create a new object of a class:
+When constructors, initialization blocks are being executed.
+When fields are initialized with default values.
+
+9. Write your own example of the recursive function. You can find a lot of examples on the Internet.
+
+10. Create a simple class with overloaded methods. Write another class to demonstrate the concept of methods overloading.
