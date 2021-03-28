@@ -1,0 +1,58 @@
+1) Create 2 classes with the same name, but put them in different packages. For example, com.domainname.modulename.
+Create a third class with the main method.
+In the main method create two different objects of your classes specifying the full name of the classes (including packages).
+
+2) Take the classes from the task 1. Create a new test class.
+Import everything (*) from your created packages.
+Now try to create objects of your classes without specifying the packages in front of the class names.
+ What happened? How can we avoid this?
+
+3) Answer the question: What is a package-private access? Create a simple program to demonstrate the package-private access.
+Tips:
+ - Create two different packages
+ - Create 3 classes. 2 classes should be in the first package, 3rd class - in the second package.
+ - Create in one of the classes some package-private members(fields or methods).
+ - In another two classes create objects of the class with package-private members and try to access its members.
+ 
+4) Answer the question: What is a public access? Create a simple program to demonstrate the public access.
+You can use tips from the task 3.
+ 
+5) Answer the question: What is a private access? Create a simple program to demonstrate the private access.
+Tips:
+ - Create two classes
+ - In on of them create private members
+ - In the second class create an object of the first class
+ - Try to access the private members
+ 
+6) Create a new class. Make it impossible to create a new object of this class using a constructor.
+Provide an appropriate public method that will allow clients of your class create a new object.
+
+7) What is the difference between package-private access and protected access?
+
+8) Create a new class. Add 5 private fields. Add getter and setters to all the fields.
+
+9) What is the different between static and non-static field of a class?
+Create an example to demonstrate this concept.
+
+10) How can you create a constant in Java, that will be available for everyone outside your class or package?
+
+11) Create a class with two different methods and two fields. One of methods should be static, another - non-static.
+The same thing should be done with class fields(first - static, second - non-static).
+These two methods should change the corresponding fields of the class when called.
+Create another class with main method to test your code.
+
+Example:
+
+class MyClass {
+
+   static int staticField;
+   int dynamicField;
+   
+   static void change(int value) {
+       // should change corresponding field
+   }
+   
+   void anotherChange(int value) {
+       // should change corresponding field
+   }
+}
