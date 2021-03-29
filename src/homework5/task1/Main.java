@@ -5,6 +5,8 @@ In the main method create two different objects of your classes specifying the f
  */
 
 import homework5.task1.net.java.Human;
+import homework5.task10.Final;
+import homework5.task7.figure.Figure;
 
 public class Main {
     public static void main(String[] args) {
