@@ -4,9 +4,18 @@ package homework5.task6;
 Provide an appropriate public method that will allow clients of your class create a new object.
  */
 
+
 public class Box {
     private int width;
     private int height;
+
+    private Box (){
+
+    }
+
+    public static Box createBox(){
+        return new Box();
+    }
 
     //Private method that NOT allows clients to use this method
     private int square(int width, int height){
