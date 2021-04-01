@@ -8,16 +8,17 @@ Tips:
 
 public class TestClass {
     public static void main(String[] args) {
-        B b = new B("Name", 1);
-        C c = new C("hello class C", 2);
+        ClassB classB = new ClassB("Name", 1);
+        ClassC classC = new ClassC("hello class C", 2);
 
-        A a = new A(b, "Hello class A");
-        A a1 = new A();
-        A a2 = new A(c);
+        ClassA classA = new ClassA(classB, "Hello class A");
+        ClassA classA1 = new ClassA();
+        ClassA classA2 = new ClassA(classC);
+        ClassA classA3 = new ClassA(classB, "stringA",classC,3);
 
-        System.out.println(a);
-        System.out.println(a1);
-        System.out.println(a2);
-
+        System.out.println(classA);
+        System.out.println(classA1);
+        System.out.println(classA2);
+        System.out.println(classA3);
     }
 }

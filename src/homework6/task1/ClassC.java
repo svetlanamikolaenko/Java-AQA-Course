@@ -1,15 +1,15 @@
 package homework6.task1;
 
-public class C {
+public class ClassC {
     private String stringC;
-    private int c;
+    private int numberC;
 
-    public C (String stringC, int c) {
+    public ClassC(String stringC, int numberC) {
         this.stringC = stringC;
-        this.c = c;
+        this.numberC = numberC;
     }
 
-    public C() {
+    public ClassC() {
         stringC = "Empty constructor of C";
     }
 
@@ -17,8 +17,8 @@ public class C {
         return stringC;
     }
 
-    public int getC() {
-        return c;
+    public int getNumberC() {
+        return numberC;
     }
 
     public void setStringC(String stringC) {
@@ -26,6 +26,9 @@ public class C {
     }
     @Override
     public String toString(){
+        if (stringC!=null && numberC != 0){
+            return "stringC = " + stringC + ", numberC = " + numberC;
+        }
         return stringC;
     }
 }
