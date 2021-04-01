@@ -16,9 +16,18 @@ public class TestClass {
         ClassA classA2 = new ClassA(classC);
         ClassA classA3 = new ClassA(classB, "stringA",classC,3);
 
+        //Using Method toString that was overwritten in ClassA
         System.out.println(classA);
         System.out.println(classA1);
         System.out.println(classA2);
         System.out.println(classA3);
+
+        //using methods of ClassB and ClassC
+        System.out.println(classA.getStringB());
+        System.out.println(classA3.getStringC());
+
+        //set and get numberB from ClassA
+        classA.setNumberB(15);
+        System.out.println(classA.getNumberB());
     }
 }

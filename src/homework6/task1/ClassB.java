@@ -26,4 +26,6 @@ public class ClassB {
     public String toString(){
         return "stringB = " + stringB + ", classB = " + numberB;
     }
+
+
 }

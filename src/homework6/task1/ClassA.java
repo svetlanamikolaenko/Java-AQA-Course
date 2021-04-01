@@ -4,7 +4,7 @@ public class ClassA {
     private ClassB classB;
     private ClassC classC = new ClassC();
     private  String stringA;
-    private int numberA;
+    public int numberA;
 
 
     public ClassA(ClassB classB) {
@@ -35,6 +35,26 @@ public class ClassA {
     }
 
     public ClassA() {
+    }
+
+    public String getStringB(){
+         return classB.getStringB();
+    }
+
+    public String getStringC(){
+        return classC.getStringC();
+    }
+
+    public int getNumberC() {
+        return classC.getNumberC();
+    }
+
+    public void setNumberB(int numberB){
+        classB.setNumberB(numberB);
+    }
+
+    public int getNumberB() {
+        return classB.getNumberB();
     }
 
     @Override
