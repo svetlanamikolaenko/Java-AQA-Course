@@ -7,10 +7,6 @@ public abstract class Car extends Vehicle{
     private int fuelPerKilometer;
     private  int currentGear;
 
-    public Car(String name, String size) {
-        super(name, size);
-    }
-
     public Car(String name, String size, int maxGears, int maxSpeed, int fuelCapacity, int fuelPerKilometer) {
         super(name, size);
         this.maxGears = maxGears;

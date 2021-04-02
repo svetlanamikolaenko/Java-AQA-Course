@@ -3,13 +3,9 @@ package homework6.task3;
 public class SportsCar extends Car {
     private int currentDistance;
 
-    public SportsCar(String name, String size) {
-        super(name, size);
-        this.currentDistance = 0;
-    }
-
     public SportsCar(String name, String size, int maxGears, int maxSpeed, int fuelCapacity, int fuelPerKilometer) {
         super(name, size, maxGears, maxSpeed, fuelCapacity, fuelPerKilometer);
+        this.currentDistance = 0;
     }
 
     public void move(int velocity, int direction, int distance, int gear) {
@@ -35,7 +31,7 @@ public class SportsCar extends Car {
 
     @Override
     public void changeGears(int gear) {
-        if(gear <= getMaxGears()){
+        if (gear <= getMaxGears()){
             setCurrentGear(gear);
             System.out.println("Gear is switched to: " + getCurrentGear());
         } else {
