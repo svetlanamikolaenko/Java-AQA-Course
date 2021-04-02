@@ -10,5 +10,21 @@ public abstract class Figure {
     public double weight;
     public double height;
 
+    public Figure(double weight, double height) {
+        this.weight = weight;
+        this.height = height;
+    }
+
+    public Figure() {
+    }
+
     public abstract double calculateArea();
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public double getHeight() {
+        return height;
+    }
 }

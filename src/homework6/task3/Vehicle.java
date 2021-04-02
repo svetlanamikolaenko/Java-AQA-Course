@@ -33,7 +33,6 @@ public class Vehicle {
     }
     public void stop(){
         this.currentVelocity = 0;
-
     }
 
     public String getName() {
@@ -46,6 +45,14 @@ public class Vehicle {
 
     public int getCurrentVelocity() {
         return currentVelocity;
+    }
+
+    public void setCurrentVelocity(int currentVelocity) {
+        this.currentVelocity = currentVelocity;
+    }
+
+    public void setCurrentDirection(int currentDirection) {
+        this.currentDirection = currentDirection;
     }
 
     public int getCurrentDirection() {

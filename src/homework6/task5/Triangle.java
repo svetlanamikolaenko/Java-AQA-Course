@@ -1,18 +1,12 @@
 package homework6.task5;
 
 public class Triangle extends Figure{
-    private double base;
 
+    public Triangle(double weight, double height) {
+        super(weight, height);
+    }
     @Override
     public double calculateArea() {
-        return base / 2 * height;
-    }
-
-    public double getBase() {
-        return base;
-    }
-
-    public void setBase(double base) {
-        this.base = base;
+        return getWeight() / 2 * getHeight();
     }
 }

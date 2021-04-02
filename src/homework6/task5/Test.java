@@ -2,17 +2,15 @@ package homework6.task5;
 
 public class Test {
     public static void main(String[] args) {
-        Circle circle = new Circle(5.536);
+        Figure circle = new Circle(5.364);
         System.out.println("Area of Circle: " + circle.calculateArea());
 
-        Rectangle rectangle = new Rectangle();
+        Figure rectangle = new Rectangle(10, 25);
         rectangle.height = 10;
         rectangle.weight = 6.3;
         System.out.println("Area of Rectangle: " + rectangle.calculateArea());
 
-        Triangle triangle = new Triangle();
-        triangle.setBase(8.55);
-        triangle.height = 15;
+        Figure triangle = new Triangle(8.55,15);
         System.out.println("Area of Triangle: " + triangle.calculateArea());
     }
 }
