@@ -10,7 +10,6 @@ public class TV extends TVDevice{
         this.channelNumber = channelNumber;
     }
 
-
     @Override
     public void powerOn() {
         isOn = true;

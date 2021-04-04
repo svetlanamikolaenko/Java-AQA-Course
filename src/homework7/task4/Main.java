@@ -4,25 +4,22 @@ public class Main {
     public static void main(String[] args) {
         Device tv = new TV("LG",true,10,3);
 
-        Device remoteController = new RemoteController((TVDevice)tv);
-
-        ((RemoteController) remoteController).disconnectDevice();
+        RemoteController remoteController = new RemoteController();
+        remoteController.connectDevice((TVDevice) tv);
+        //remoteController.disconnectDevice();
         remoteController.powerOn();
-
+        remoteController.currentChannel();
         remoteController.setChannel(25);
         remoteController.currentChannel();
-        ((RemoteController) remoteController).switchTheChannel(36);
+        remoteController.switchTheChannel(36);
         remoteController.currentChannel();
 
-        ((RemoteController) remoteController).downVolume();
-        ((RemoteController) remoteController).mute();
-        ((RemoteController) remoteController).downVolume();
-        ((RemoteController) remoteController).upVolume();
+        remoteController.downVolume();
+        remoteController.mute();
+        remoteController.downVolume();
+        remoteController.upVolume();
+        remoteController.powerOff();
 
-        ((RemoteController) remoteController).checkIfDeviceIsConnected();
-
-
-
-
+        remoteController.disconnectDevice();
     }
 }

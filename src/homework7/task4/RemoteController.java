@@ -3,45 +3,44 @@ package homework7.task4;
 public class RemoteController implements Volume, Device {
     private TVDevice tvDevice;
 
-    public RemoteController(TVDevice tvDevice) {
-        this.tvDevice = tvDevice;
-    }
 
     public void connectDevice(TVDevice tvDevice) {
-        tvDevice.powerOn();
+            this.tvDevice = tvDevice;
+        System.out.println(tvDevice.modelName + " successfully connected!");
     }
 
     public void disconnectDevice() {
-        powerOff();
+        System.out.println( tvDevice.modelName  + " disconnected!");
+        this.tvDevice = null;
     }
 
     public void switchTheChannel(int channel) {
-        if (tvDevice.isOn) {
+        if (checkIfDeviceIsConnected() && tvDevice.isOn) {
             tvDevice.setChannel(channel);
-            ;
+        }  else System.out.println("Connection error");
+    }
+
+    private boolean checkIfDeviceIsConnected() {
+        if(tvDevice == null){
+            return false;
         }
+        return true;
     }
-
-    public boolean checkIfDeviceIsConnected() {
-        System.out.println(tvDevice.isOn);
-        return tvDevice.isOn;
-    }
-
 
     @Override
     public void powerOn() {
-        if (!tvDevice.isOn) {
-            System.out.println("Connecting ..." + tvDevice.modelName);
+        if (checkIfDeviceIsConnected() && !tvDevice.isOn) {
+            System.out.println("Turning on ..." + tvDevice.modelName);
             tvDevice.powerOn();
         }
     }
 
     @Override
     public void powerOff() {
-        if (tvDevice.isOn) {
-            System.out.println("Disconnecting ..." + tvDevice.modelName);
+        if (checkIfDeviceIsConnected() && tvDevice.isOn) {
+            System.out.println("Turning off ..." + tvDevice.modelName);
             tvDevice.powerOff();
-        }
+        }  else System.out.println("Connection error");
     }
 
     @Override
@@ -51,27 +50,29 @@ public class RemoteController implements Volume, Device {
 
     @Override
     public void currentChannel() {
-        if (tvDevice.isOn) {
+        if (checkIfDeviceIsConnected() && tvDevice.isOn) {
             tvDevice.currentChannel();
-        } else System.out.println(tvDevice.modelName + " device is disconnected");
+        } else System.out.println("Connection error");
     }
 
     @Override
     public void upVolume() {
-        if (tvDevice.isOn) {
+        if (checkIfDeviceIsConnected() && tvDevice.isOn) {
             tvDevice.upVolume();
-        }
+        } else System.out.println("Connection error");
     }
 
     @Override
     public void downVolume() {
-        if (tvDevice.isOn)
-            tvDevice.downVolume();
+        if (checkIfDeviceIsConnected() && tvDevice.isOn){
+            tvDevice.downVolume();}
+        else System.out.println("Connection error");
     }
 
     @Override
     public void mute() {
-        if (tvDevice.isOn)
+        if (checkIfDeviceIsConnected() && tvDevice.isOn) {
             tvDevice.mute();
+        } else System.out.println("Connection error");
     }
 }
