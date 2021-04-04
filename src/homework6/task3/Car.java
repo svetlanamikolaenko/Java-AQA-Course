@@ -16,6 +16,7 @@ public abstract class Car extends Vehicle{
         this.currentGear = 0;
     }
 
+
     public abstract int range();
 
     public abstract double fuelNeeded();
