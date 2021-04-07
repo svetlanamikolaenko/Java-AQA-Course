@@ -13,6 +13,7 @@ public class Main {
 
     }
 }
+Print the cause of the exception to the console.
  */
 
 public class Main {
@@ -25,12 +26,13 @@ public class Main {
             System.out.println(c[1]);
         }
         catch (ArithmeticException e) {
-            System.out.println("Division by 0");        }
+            System.out.println("Division by 0");
+        }
         catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Array index not exists");
         }
         catch (Exception e) {
-            System.out.println("Exception");
+            System.out.println(e.getCause().getMessage());
         }
     }
 }
