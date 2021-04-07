@@ -1,0 +1,105 @@
+1) Write a simple java program to demonstrate composition of classes. 
+Tips:
+ a) Create several classes A, B, C;
+ b) Add functionality of classes B and C to the class A without using inheritance.
+ c) Create a test class and demonstrate how we can use functionality of classes B and C via created object of the class A;
+2) Correct nine classes: Worker (employee), Clerk (clerk), IT (IT specialist), Programmer (programmer),ProjectManager (project manager), CTO (CTO), HR (recruiter), OfficeManager (office manager), Cleaner (cleaner).
+Inherit a programmer, project manager and technical director from an IT specialist.
+Inherit the recruiter, cleaner and office manager from the clerk.
+Inherit the clerk and IT professional from the employee.
+public class Task {
+    public static void main(String[] args) {
+    }
+
+    public class Worker {
+
+    }
+
+    public class Clerk {
+
+    }
+
+    public class IT {
+
+    }
+
+    public class Programmer {
+
+    }
+
+    public class ProjectManager  {
+
+    }
+
+    public class CTO  {
+
+    }
+
+    public class OfficeManager  {
+
+    }
+
+    public class HR {
+
+    }
+
+    public class Cleaner {
+
+    }
+}
+
+3) Start with a base class of a Vehicle, then create a Car class that inherits from this base class. Finally, create another class, a specific type of Car that inherits from the Car class. You should be able to hand steering, changing gears, and moving(speed in other words). You will want to decide where to put the appropriate state and behaviours(fields and methods).
+As mentioned above, changing gears, increasing/decreasing speed should be included. For you specific type of vehicle you will want to add something specific for that type of car.
+
+public class Vehicle {
+    private String name;
+    private String size;
+    private int currentVelocity;
+    private int currentDirection;
+
+    public Vehicle(String name, String size) {
+        this.name = name;
+        this.size = size;
+        this.currentVelocity = 0;
+        this.currentDirection = 0;
+    }
+
+    public void steer(int direction) {
+        this.currentDirection += direction;
+        System.out.println(""Vehicle.steer(): Steering at "" + currentDirection + ""degrees."");
+    }
+    public void move(int velocity, int direction){
+        currentVelocity = velocity;
+        currentDirection = direction;
+        System.out.println(""Vehicle.move(): Moving at "" + currentVelocity + "" in direction "" + currentDirection);
+
+    }
+    public void stop(){
+        this.currentVelocity = 0;
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public int getCurrentVelocity() {
+        return currentVelocity;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
+    }
+}
+
+4) Create a class A. Add several fields, two methods and parameterized constructors to it. Create a class B that extends class A. 
+Demonstrate in you program how class's B constructor should call class's A constructor to create a new object.
+ Override one method of the class A to fully change it's behavior.
+  Override another method to add some extra functionality to it, but it should then call class's A method.
+ Create a test class and create several objects of class A and class B and call their methods.
+5) Create an abstract class Figure. Add fields width and height to it. Add an abstract method "calculateArea" which should be overridden by the concrete figures to calculate its area.
+Figures: Rectangle, Triangle, Circle
