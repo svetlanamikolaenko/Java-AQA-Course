@@ -13,12 +13,12 @@ import java.nio.file.Paths;
 public class CopyFile {
     public static void main(String[] args) {
         Path original = Paths.get("src/homework9/original.txt");
-        Path copyOfOriginal = Paths.get("src/homework9/copy_of_original.txt");
+        Path copyOfOriginal = Paths.get("src/homework9/original.txt");
 
         try {
             String read = Files.readString(original);
             Files.writeString(copyOfOriginal, read);
-
+            Files.delete(original);
         } catch (IOException e) {
             System.out.println(e.getMessage());
             System.out.println("Path " + original + " not exists");
