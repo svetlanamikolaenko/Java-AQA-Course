@@ -3,12 +3,11 @@ package homework9;
 1. Read about java.nio package(Path, Paths, Files, File) and try to use it to read the data from the first file
 and write this data to the second file. Delete the initial file from the disk.
  */
-import java.io.File;
+
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
-import java.util.List;
-import java.util.stream.Stream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 
 public class CopyFile {
