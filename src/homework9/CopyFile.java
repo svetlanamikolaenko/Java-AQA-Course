@@ -5,24 +5,24 @@ and write this data to the second file. Delete the initial file from the disk.
  */
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.util.List;
+import java.util.stream.Stream;
 
 
 public class CopyFile {
     public static void main(String[] args) {
-        File file = new File("src/homework9/original.txt");
-        Path original = file.toPath();
+        Path original = Paths.get("src/homework9/original.txt");
         Path copyOfOriginal = Paths.get("src/homework9/copy_of_original.txt");
 
         try {
-            Files.copy(original, copyOfOriginal, StandardCopyOption.COPY_ATTRIBUTES);
-            Files.delete(original);
+            String read = Files.readString(original);
+            Files.writeString(copyOfOriginal, read);
+
         } catch (IOException e) {
             System.out.println(e.getMessage());
-            System.out.println("File " + file.getName() + " not exists");
+            System.out.println("Path " + original + " not exists");
         }
     }
 }
