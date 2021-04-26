@@ -1,0 +1,15 @@
+1) With the help of HashMap try to calculate all of the unique words in the song Umbrella ignoring the case.
+   Print all of these words to the console with the number of times they appear in the text.
+   Find the most frequent word in the text and print it to the console as well.
+
+Files
+Path
+Paths
+
+
+--------
+Generics
+Reflection API
+Annotation
+TreeSet, TreeMap
+Lambda functions Java, Functional Interfaces
